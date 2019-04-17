@@ -12,7 +12,7 @@ describe 'student' do
   end
 
   it 'has a grade' do
-    student = Student.create(name: "Steven", grade: 12, birthdate: "April 5th")
+    student = Student.create(name: "Steven", grade: 12, birthday: "April 5th")
     expect(Student.where(grade: 12).first).to eq(student)
   end
 
