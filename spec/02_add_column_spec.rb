@@ -17,7 +17,7 @@ describe 'student' do
   end
 
   it 'has a string birthday' do
-    student = Student.create(name: "Steven", grade: 12, birthdate: "April 5th")
-    expect(Student.where(birthdate: "April 5th").first).to eq(student)
+    student = Student.create(name: "Steven", grade: 12, birthday: "April 5th")
+    expect(Student.where(birthday: "April 5th").first).to eq(student)
   end
 end
