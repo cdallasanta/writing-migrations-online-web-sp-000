@@ -16,6 +16,6 @@ describe 'student' do
 
   it 'has a birthday as a datetime datatype' do
     student = Student.create(name: "Steven", birthday: DateTime.new(2000,1,1))
-    expect(Student.where(birthdate: DateTime.new(2000,1,1)).first).to eq(student)
+    expect(Student.where(birthday: DateTime.new(2000,1,1)).first).to eq(student)
   end
 end
